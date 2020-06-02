@@ -1,5 +1,6 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
+import "./style.css";
 
 const state = {
   labels: ["January", "February", "March", "April", "May"],
@@ -61,26 +62,13 @@ var chartOptions = {
       },
     ],
   },
+  maintainAspectRatio: false,
 };
 
 const Bars = () => {
   return (
-    <div>
-      <Bar
-        data={planetData}
-        options={chartOptions}
-        // options={{
-        //   title: {
-        //     display: true,
-        //     text: "Average Rainfall per month",
-        //     fontSize: 20,
-        //   },
-        //   legend: {
-        //     display: true,
-        //     position: "right",
-        //   },
-        // }}
-      />
+    <div className="wrapper">
+      <Bar data={planetData} options={chartOptions} />
     </div>
   );
 };

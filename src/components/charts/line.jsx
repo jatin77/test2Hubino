@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Line } from "react-chartjs-2";
+import "./style.css";
 
 class Lines extends Component {
   render() {
@@ -17,8 +18,13 @@ class Lines extends Component {
           backgroundColor: "rgba(255,153,0,0.6)",
         },
       ],
+      maintainAspectRatio: false,
     };
-    return <Line data={chartData}></Line>;
+    return (
+      <div className="wrapper">
+        <Line data={chartData}></Line>
+      </div>
+    );
   }
 }
 

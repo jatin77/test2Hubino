@@ -1,0 +1,19 @@
+.wrapper {
+  position: relative;
+  width: 40vw;
+  height: 40vh;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    width: 80vw;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 520px) {
+  .wrapper {
+    width: 70vw;
+    height: 40vh;
+  }
+}
