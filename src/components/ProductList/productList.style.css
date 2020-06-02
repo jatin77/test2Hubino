@@ -1,0 +1,17 @@
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+@media (max-width: 1350px) {
+  .products {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .products {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+}
